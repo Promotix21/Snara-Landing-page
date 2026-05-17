@@ -8,8 +8,8 @@ export function Hero() {
     <section className="relative min-h-[90vh] flex items-center pt-24 pb-16 overflow-hidden">
       {/* Background Signals & Atmosphere */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,143,0,0.1),transparent_50%)]" />
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_at_top_right,rgba(255,143,0,0.15),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(223,178,86,0.1),transparent_50%)]" />
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-[radial-gradient(ellipse_at_top_right,rgba(223,178,86,0.15),transparent_60%)]" />
         
         {/* Animated Particles / Signals */}
         {/* Removed animated particles based on feedback */}
@@ -64,7 +64,7 @@ export function Hero() {
               {/* Header */}
               <div className="flex items-center justify-between mb-6 border-b border-white/5 pb-4">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.8)] animate-pulse" />
+                  <div className="w-2 h-2 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(203,160,82,0.8)] animate-pulse" />
                   <span className="text-xs font-medium text-white">Live Intelligence Stream</span>
                 </div>
                 <span className="text-[10px] text-[#555] font-mono">SN-8829-QX</span>
@@ -93,7 +93,7 @@ export function Hero() {
                 <div className="flex gap-4 relative">
                    <div className="mt-1 relative">
                      <div className="absolute top-6 bottom-[-24px] left-1/2 -translate-x-1/2 w-px bg-white/5" />
-                     <div className="w-6 h-6 rounded-full bg-orange-500/20 border border-orange-500/30 flex items-center justify-center relative z-10 shadow-[0_0_10px_rgba(249,115,22,0.3)]">
+                     <div className="w-6 h-6 rounded-full bg-orange-500/20 border border-orange-500/30 flex items-center justify-center relative z-10 shadow-[0_0_10px_rgba(203,160,82,0.3)]">
                        <Zap className="w-3 h-3 text-orange-500" />
                      </div>
                    </div>

@@ -99,10 +99,10 @@ export function ConversationalIntelligence() {
                     transition={{ delay: 2 }}
                     className="flex gap-4 flex-row-reverse"
                   >
-                   <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-orange-600 to-orange-400 flex items-center justify-center shrink-0 shadow-[0_0_15px_rgba(249,115,22,0.4)]">
+                   <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-orange-600 to-orange-400 flex items-center justify-center shrink-0 shadow-[0_0_15px_rgba(203,160,82,0.4)]">
                      <Sparkles className="w-4 h-4 text-white" />
                    </div>
-                   <div className="bg-black border border-orange-500/30 text-zinc-200 text-sm p-4 rounded-2xl rounded-tr-sm w-full shadow-[0_4px_20px_rgba(249,115,22,0.05)]">
+                   <div className="bg-black border border-orange-500/30 text-zinc-200 text-sm p-4 rounded-2xl rounded-tr-sm w-full shadow-[0_4px_20px_rgba(203,160,82,0.05)]">
                      <p className="mb-2">I completely understand. Security is critical at the enterprise level.</p>
                      <p>Since you&apos;re exploring our compliance standards, would you like me to send you our latest SOC 2 Type II report and HIPAA compliance overview?</p>
                    </div>

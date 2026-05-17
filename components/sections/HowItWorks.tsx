@@ -48,7 +48,7 @@ export function HowItWorks() {
              <motion.div
               animate={{ left: ['0%', '100%'] }}
               transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
-              className="absolute top-1/2 -translate-y-1/2 w-8 h-1 bg-orange-400 rounded-full shadow-[0_0_10px_rgba(249,115,22,0.8)]"
+              className="absolute top-1/2 -translate-y-1/2 w-8 h-1 bg-orange-400 rounded-full shadow-[0_0_10px_rgba(203,160,82,0.8)]"
             />
           </div>
 
@@ -71,7 +71,7 @@ export function HowItWorks() {
                      <motion.div 
                         animate={{ top: ['-10%', '110%'] }}
                         transition={{ duration: 2, repeat: Infinity, ease: "linear", delay: step.delay }}
-                        className="absolute left-0 right-0 h-[2px] bg-orange-500/50 shadow-[0_0_8px_rgba(249,115,22,0.8)] -rotate-45"
+                        className="absolute left-0 right-0 h-[2px] bg-orange-500/50 shadow-[0_0_8px_rgba(203,160,82,0.8)] -rotate-45"
                      />
                     <div className="-rotate-45">
                       <step.icon className="w-8 h-8 text-zinc-300 group-hover:text-orange-500 transition-colors" />

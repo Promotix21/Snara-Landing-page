@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-orange-400: #ff8533;
-  --color-orange-500: #FF6B00;
-  --color-orange-600: #CC5500;
+  --color-orange-400: #DFB256;
+  --color-orange-500: #CBA052;
+  --color-orange-600: #AB8641;
 
   --color-zinc-950: #050505;
   --color-zinc-900: rgba(255, 255, 255, 0.02);

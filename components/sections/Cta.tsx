@@ -8,7 +8,7 @@ export function Cta() {
     <section className="relative py-40 overflow-hidden bg-black flex items-center justify-center min-h-[70vh]">
       {/* Cinematic Background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(255,143,0,0.15),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(223,178,86,0.15),transparent_60%)]" />
         
         {/* Particle nodes */}
         <motion.div 
@@ -55,7 +55,7 @@ export function Cta() {
            viewport={{ once: true }}
            transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full border border-orange-500/30 mb-8 mx-auto shadow-[0_0_20px_rgba(249,115,22,0.2)]">
+          <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full border border-orange-500/30 mb-8 mx-auto shadow-[0_0_20px_rgba(203,160,82,0.2)]">
             <Sparkles className="w-4 h-4 text-orange-500" />
             <span className="text-[10px] font-bold text-orange-500 tracking-[0.2em] uppercase">The Future of Engagement</span>
           </div>
@@ -69,7 +69,7 @@ export function Cta() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-             <button className="h-12 px-8 bg-orange-500 text-black font-bold rounded-sm text-xs uppercase tracking-widest hover:bg-orange-400 transition-colors flex items-center justify-center space-x-2 shadow-[0_0_30px_rgba(249,115,22,0.4)]">
+             <button className="h-12 px-8 bg-orange-500 text-black font-bold rounded-sm text-xs uppercase tracking-widest hover:bg-orange-400 transition-colors flex items-center justify-center space-x-2 shadow-[0_0_30px_rgba(203,160,82,0.4)]">
               <span>Explore Snara</span>
             </button>
             <button className="h-12 px-8 border border-white/20 text-white font-bold rounded-sm text-xs uppercase tracking-widest hover:bg-white/5 transition-colors flex items-center justify-center">

@@ -60,7 +60,7 @@ export function IntelligenceEngine() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="group relative bg-white/[0.01] hover:bg-white/[0.03] border border-white/5 rounded-xl transition-all duration-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.1)]"
+              className="group relative bg-white/[0.01] hover:bg-white/[0.03] border border-white/5 rounded-xl transition-all duration-500 hover:shadow-[0_0_30px_rgba(203,160,82,0.1)]"
             >
               
               <div className="relative h-full rounded-xl p-6 flex flex-col justify-between overflow-hidden">

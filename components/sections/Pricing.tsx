@@ -65,7 +65,7 @@ export function Pricing() {
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-gradient-to-r from-orange-600 to-orange-400 rounded-full text-[10px] font-mono font-medium text-black uppercase tracking-widest shadow-[0_0_10px_rgba(249,115,22,0.5)]">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-gradient-to-r from-orange-600 to-orange-400 rounded-full text-[10px] font-mono font-medium text-black uppercase tracking-widest shadow-[0_0_10px_rgba(203,160,82,0.5)]">
                   Maximum Intelligence
                 </div>
               )}

@@ -20,7 +20,7 @@ export function LiveVisualization() {
         <div className="mx-auto max-w-5xl h-[500px] md:h-[600px] relative bg-zinc-900/20 rounded-3xl border border-zinc-800/50 backdrop-blur-md overflow-hidden">
           
           {/* Ambient lighting */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[radial-gradient(ellipse_at_center,rgba(249,115,22,0.08),transparent_70%)] pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[radial-gradient(ellipse_at_center,rgba(203,160,82,0.08),transparent_70%)] pointer-events-none" />
 
           {/* Core Processing Unit Component */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 z-10">
@@ -29,7 +29,7 @@ export function LiveVisualization() {
                transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
                className="absolute inset-0 rounded-full border border-orange-500/20 border-dashed"
              />
-             <div className="absolute inset-2 bg-black rounded-full border border-zinc-700 flex items-center justify-center shadow-[0_0_40px_rgba(249,115,22,0.15)] overflow-hidden">
+             <div className="absolute inset-2 bg-black rounded-full border border-zinc-700 flex items-center justify-center shadow-[0_0_40px_rgba(203,160,82,0.15)] overflow-hidden">
                 <motion.div 
                    animate={{ scale: [1, 1.2, 1], opacity: [0.5, 1, 0.5] }}
                    transition={{ duration: 2, repeat: Infinity }}
@@ -77,7 +77,7 @@ export function LiveVisualization() {
               transition={{ duration: 3 + i * 0.5, repeat: Infinity, ease: "easeInOut", delay: node.delay }}
             >
               <div className="relative group cursor-default">
-                <div className={`w-10 h-10 rounded-full flex items-center justify-center border bg-black backdrop-blur-md ${node.intent > 70 ? 'border-orange-500/50 shadow-[0_0_15px_rgba(249,115,22,0.3)]' : 'border-zinc-700'}`}>
+                <div className={`w-10 h-10 rounded-full flex items-center justify-center border bg-black backdrop-blur-md ${node.intent > 70 ? 'border-orange-500/50 shadow-[0_0_15px_rgba(203,160,82,0.3)]' : 'border-zinc-700'}`}>
                    <User className={`w-4 h-4 ${node.intent > 70 ? 'text-orange-400' : 'text-zinc-500'}`} />
                 </div>
                 {/* Node info card */}

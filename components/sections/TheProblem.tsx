@@ -52,7 +52,7 @@ export function TheProblem() {
             <div className="absolute top-6 right-8 text-[10px] font-bold text-orange-500 uppercase tracking-widest whitespace-nowrap z-20">The Snara Way</div>
 
              {/* Background glow */}
-             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,143,0,0.1),transparent_70%)]" />
+             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(223,178,86,0.1),transparent_70%)]" />
 
             {/* Dynamic UI Engine */}
             <div className="relative mt-8 h-full z-10 flex items-center justify-center">
@@ -61,7 +61,7 @@ export function TheProblem() {
               <motion.div 
                 animate={{ scale: [1, 1.05, 1] }} 
                 transition={{ duration: 4, repeat: Infinity }}
-                className="w-24 h-24 rounded-full bg-black border border-orange-500/40 shadow-[0_0_20px_rgba(249,115,22,0.4)] flex items-center justify-center z-20"
+                className="w-24 h-24 rounded-full bg-black border border-orange-500/40 shadow-[0_0_20px_rgba(203,160,82,0.4)] flex items-center justify-center z-20"
               >
                 <BrainCircuit className="w-8 h-8 text-orange-500" />
               </motion.div>
