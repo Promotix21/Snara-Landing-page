@@ -52,7 +52,7 @@ export function LiveVisualization() {
                 key={i}
                 x1="50" y1="50" 
                 x2={node.x} y2={node.y} 
-                stroke={node.intent > 70 ? '#f97316' : '#52525b'} 
+                stroke={node.intent > 70 ? '#CBA052' : '#52525b'} 
                 strokeWidth="0.2" 
                 strokeDasharray="1 1"
               />
@@ -72,10 +72,9 @@ export function LiveVisualization() {
               className="absolute -translate-x-1/2 -translate-y-1/2"
               style={{ left: `${node.x}%`, top: `${node.y}%` }}
               animate={{
-                x: [0, ((i * 7) % 20) - 10, 0],
-                y: [0, ((i * 11) % 20) - 10, 0],
+                scale: [1, 1.1, 1],
               }}
-              transition={{ duration: 10 + i * 2, repeat: Infinity, ease: "easeInOut" }}
+              transition={{ duration: 3 + i * 0.5, repeat: Infinity, ease: "easeInOut", delay: node.delay }}
             >
               <div className="relative group cursor-default">
                 <div className={`w-10 h-10 rounded-full flex items-center justify-center border bg-black backdrop-blur-md ${node.intent > 70 ? 'border-orange-500/50 shadow-[0_0_15px_rgba(249,115,22,0.3)]' : 'border-zinc-700'}`}>

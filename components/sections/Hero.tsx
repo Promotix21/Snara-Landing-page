@@ -55,72 +55,108 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.2 }}
           className="relative lg:h-[600px] flex justify-center items-center"
         >
-          {/* Main Holographic Panel */}
-          <div className="relative w-full max-w-sm border border-white/5 bg-white/[0.02] backdrop-blur-xl rounded-2xl p-6 overflow-hidden shadow-2xl">
+          {/* Main Context Stream Panel */}
+          <div className="relative w-full max-w-md border border-white/5 bg-white/[0.02] backdrop-blur-xl rounded-2xl p-6 shadow-2xl">
             {/* Grid overlay */}
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CjxwYXRoIGQ9Ik0wIDBoNDB2NDBIMHoiIGZpbGw9Im5vbmUiLz4KPHBhdGggZD0iTTAgNDBoNDBNNDAgMHY0MCIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDMpIiBzdHJva2Utd2lkdGg9IjEiLz4KPC9zdmc+')] opacity-20" />
-            
+            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CjxwYXRoIGQ9Ik0wIDBoNDB2NDBIMHoiIGZpbGw9Im5vbmUiLz4KPHBhdGggZD0iTTAgNDBoNDBNNDAgMHY0MCIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDMpIiBzdHJva2Utd2lkdGg9IjEiLz4KPC9zdmc+')] opacity-20 pointer-events-none rounded-2xl" />
+
             <div className="relative z-10">
-              <div className="flex justify-between items-start mb-8">
-                <div>
-                  <div className="text-[10px] text-[#555] uppercase tracking-wider mb-1">Live Signal Capture</div>
-                  <div className="text-xl font-mono text-white">ID: SN-8829-QX</div>
+              {/* Header */}
+              <div className="flex items-center justify-between mb-6 border-b border-white/5 pb-4">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-orange-500 shadow-[0_0_8px_rgba(249,115,22,0.8)] animate-pulse" />
+                  <span className="text-xs font-medium text-white">Live Intelligence Stream</span>
                 </div>
-                <div className="px-3 py-1 bg-orange-500/20 border border-orange-500/30 rounded text-[10px] text-orange-500 font-bold">
-                  HIGH INTENT DETECTED
-                </div>
+                <span className="text-[10px] text-[#555] font-mono">SN-8829-QX</span>
               </div>
 
-              {/* Circular Signal Visual */}
-              <div className="relative w-48 h-48 mx-auto mb-8 flex items-center justify-center">
-                <motion.div 
-                  animate={{ scale: [1, 1.05, 1], opacity: [0.5, 1, 0.5] }}
-                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute inset-0 border border-orange-500/30 rounded-full"
-                />
-                <motion.div 
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                  className="absolute inset-4 border border-white/10 rounded-full border-dashed"
-                />
-                <div className="absolute inset-8 border-[0.5px] border-white/5 rounded-full" />
+              {/* Event Feed */}
+              <div className="space-y-4">
+                {/* Event 1 */}
+                <div className="flex gap-4">
+                   <div className="mt-1 relative">
+                     <div className="absolute top-6 bottom-[-24px] left-1/2 -translate-x-1/2 w-px bg-white/5" />
+                     <div className="w-6 h-6 rounded-full bg-white/5 border border-white/10 flex items-center justify-center relative z-10">
+                       <Waves className="w-3 h-3 text-[#888]" />
+                     </div>
+                   </div>
+                   <div className="flex-1 bg-white/5 border border-white/5 rounded-lg p-3">
+                     <div className="flex justify-between items-start mb-1">
+                       <span className="text-xs font-bold text-white">Page Navigation</span>
+                       <span className="text-[10px] text-[#555]">Just now</span>
+                     </div>
+                     <p className="text-[11px] text-[#888]">Visitor navigated to Pricing page and expanded Enterprise tier details.</p>
+                   </div>
+                </div>
+
+                {/* Event 2 */}
+                <div className="flex gap-4 relative">
+                   <div className="mt-1 relative">
+                     <div className="absolute top-6 bottom-[-24px] left-1/2 -translate-x-1/2 w-px bg-white/5" />
+                     <div className="w-6 h-6 rounded-full bg-orange-500/20 border border-orange-500/30 flex items-center justify-center relative z-10 shadow-[0_0_10px_rgba(249,115,22,0.3)]">
+                       <Zap className="w-3 h-3 text-orange-500" />
+                     </div>
+                   </div>
+                   <div className="flex-1 bg-orange-500/5 border border-orange-500/20 rounded-lg p-3">
+                     <div className="flex justify-between items-start mb-1">
+                       <span className="text-xs font-bold text-orange-500">High Intent Signal</span>
+                       <span className="text-[10px] text-[#555]">12s ago</span>
+                     </div>
+                     <p className="text-[11px] text-[#888] mb-2">Dwell time on API docs exceeded 40 seconds. Scroll depth 85%.</p>
+                     {/* Progress bar representing intent increase */}
+                     <div className="flex items-center gap-2">
+                       <div className="flex-1 h-1 bg-white/10 rounded-full overflow-hidden">
+                         <motion.div 
+                           initial={{ width: '40%' }}
+                           animate={{ width: '92%' }}
+                           transition={{ duration: 1.5, ease: 'easeOut', delay: 0.5 }}
+                           className="h-full bg-orange-500 rounded-full" 
+                         />
+                       </div>
+                       <span className="text-[10px] font-bold text-orange-500">92%</span>
+                     </div>
+                   </div>
+                </div>
                 
-                <div className="text-center relative z-10">
-                  <div className="text-5xl font-bold text-white tracking-tighter">94<span className="text-2xl text-orange-500">%</span></div>
-                  <div className="text-[9px] text-[#888] uppercase tracking-[0.2em] mt-1">Intent Score</div>
-                </div>
-
-                {/* Small Nodes */}
-                <motion.div 
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-                  className="absolute inset-0 origin-center"
-                >
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-orange-500 rounded-full shadow-[0_0_15px_rgba(249,115,22,0.8)]" />
-                </motion.div>
-                <div className="absolute bottom-[15%] right-[15%] w-1.5 h-1.5 bg-white/40 rounded-full shadow-[0_0_10px_rgba(255,255,255,0.5)]" />
-              </div>
-
-              {/* Bottom Stats */}
-              <div className="space-y-3">
-                <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-                <div className="grid grid-cols-2 gap-4 pt-2">
-                  <div className="bg-white/5 p-4 rounded-xl border border-white/5 backdrop-blur-sm">
-                    <div className="text-[9px] text-[#555] uppercase tracking-widest mb-1 flex items-center gap-1.5">
-                      <div className="w-1.5 h-1.5 rounded-full bg-zinc-500" />
-                      Dwell Time
-                    </div>
-                    <div className="text-lg text-white font-mono">04:12.8s</div>
-                  </div>
-                  <div className="bg-orange-500/5 p-4 rounded-xl border border-orange-500/10 backdrop-blur-sm">
-                    <div className="text-[9px] text-[#555] uppercase tracking-widest mb-1 flex items-center gap-1.5">
-                      <div className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
-                      Signal Quality
-                    </div>
-                    <div className="text-lg text-orange-500 font-mono">Optimal</div>
-                  </div>
+                {/* Event 3 */}
+                <div className="flex gap-4">
+                   <div className="mt-1 relative">
+                     <div className="w-6 h-6 rounded-full bg-white/5 border border-white/10 flex items-center justify-center relative z-10">
+                       <Target className="w-3 h-3 text-[#888]" />
+                     </div>
+                   </div>
+                   <div className="flex-1 bg-white/5 border border-white/5 rounded-lg p-3 opacity-60">
+                     <div className="flex justify-between items-start mb-1">
+                       <span className="text-xs font-bold text-white">Initial Touchpoint</span>
+                       <span className="text-[10px] text-[#555]">1m ago</span>
+                     </div>
+                     <p className="text-[11px] text-[#888]">Visitor arrived via organic search for &quot;real-time analytics API&quot;.</p>
+                   </div>
                 </div>
               </div>
+              
+              {/* Auto-generate action */}
+              <div className="mt-6 pt-4 border-t border-white/5">
+                <div className="flex items-center justify-between bg-black border border-white/10 rounded-lg p-3">
+                   <div className="flex items-center gap-3">
+                     <div className="w-8 h-8 rounded bg-orange-500/10 flex items-center justify-center">
+                       <Activity className="w-4 h-4 text-orange-500" />
+                     </div>
+                     <div>
+                       <div className="text-[10px] text-[#555] uppercase tracking-wider mb-0.5">Recommended Action</div>
+                       <div className="text-xs font-bold text-white">Trigger Contextual Chat</div>
+                     </div>
+                   </div>
+                   <motion.div 
+                     animate={{ opacity: [1, 0.5, 1] }} 
+                     transition={{ duration: 2, repeat: Infinity }}
+                     className="px-3 py-1.5 bg-orange-500 text-black text-[10px] uppercase font-bold tracking-widest rounded-sm cursor-pointer hover:bg-orange-400"
+                   >
+                     Execute
+                   </motion.div>
+                </div>
+              </div>
+
             </div>
           </div>
         </motion.div>

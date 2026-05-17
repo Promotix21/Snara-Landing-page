@@ -15,7 +15,7 @@ export function ConversationalIntelligence() {
               Conversations <br /> Powered by <span className="font-bold italic text-transparent bg-clip-text bg-gradient-to-r from-white to-orange-500">Context.</span>
             </h2>
             <p className="text-[#888] text-lg mb-8 leading-relaxed">
-              Snara goes beyond scripted chatbots. It reads the room. By injecting real-time behavioral data into the conversational AI, every response is hyper-personalized to the exact micro-moment of the user's journey.
+              Snara goes beyond scripted chatbots. It reads the room. By injecting real-time behavioral data into the conversational AI, every response is hyper-personalized to the exact micro-moment of the user&apos;s journey.
             </p>
             
             <ul className="space-y-6">
@@ -72,7 +72,7 @@ export function ConversationalIntelligence() {
                      <User className="w-4 h-4 text-zinc-400" />
                    </div>
                    <div className="bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm p-4 rounded-2xl rounded-tl-sm w-full">
-                     I'm looking for an enterprise solution, but I need to know about security.
+                     I&apos;m looking for an enterprise solution, but I need to know about security.
                    </div>
                  </div>
 
@@ -88,7 +88,7 @@ export function ConversationalIntelligence() {
                          initial={{ left: '-100%' }} animate={{ left: '100%' }} transition={{ duration: 2, repeat: Infinity }}
                          className="absolute top-0 bottom-0 w-1/2 bg-gradient-to-r from-transparent via-orange-500/20 to-transparent"
                        />
-                       [SYSTEM: Detected Enterprise intent. User viewed 'Compliance' page for 45s prior to chat. Shifting response tone to High-Security/Enterprise.]
+                       [SYSTEM: Detected Enterprise intent. User viewed &apos;Compliance&apos; page for 45s prior to chat. Shifting response tone to High-Security/Enterprise.]
                     </div>
                  </motion.div>
 
@@ -104,7 +104,7 @@ export function ConversationalIntelligence() {
                    </div>
                    <div className="bg-black border border-orange-500/30 text-zinc-200 text-sm p-4 rounded-2xl rounded-tr-sm w-full shadow-[0_4px_20px_rgba(249,115,22,0.05)]">
                      <p className="mb-2">I completely understand. Security is critical at the enterprise level.</p>
-                     <p>Since you're exploring our compliance standards, would you like me to send you our latest SOC 2 Type II report and HIPAA compliance overview?</p>
+                     <p>Since you&apos;re exploring our compliance standards, would you like me to send you our latest SOC 2 Type II report and HIPAA compliance overview?</p>
                    </div>
                  </motion.div>
               </div>
